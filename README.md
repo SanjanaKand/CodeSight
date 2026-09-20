@@ -12,3 +12,7 @@ CodeSight/
 │   └── requirements.txt # Python dependencies
 │
 └── .gitignore       # Files and folders ignored by Git
+
+## Development Workflow
+- **Avoid Direct Edits to Main:** Always use virtual environments and test      changes locally before pushing updates.
+- **Version Control:** Keep commits descriptive and structured as features evolve.
