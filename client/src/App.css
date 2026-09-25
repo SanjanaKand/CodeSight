@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+  height: 60px;
+  flex-shrink: 0;
+
+  background: #1e293b;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.run-button {
+  padding: 8px 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #22c55e;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.run-button:hover {
+  background: #16a34a;
+}
+
+/* =========================
+   MAIN WORKSPACE
+   ========================= */
+
+.main-content {
+  flex: 1;
+  min-height: 0;
+
+  display: flex;
+  width: 100%;
+
+  background: #cbd5e1;
+}
+
+/* =========================
+   CODE EDITOR
+   ========================= */
+
+.editor-section {
+  width: 50%;
+  height: 100%;
+  min-height: 0;
+
+  background: #1e1e1e;
+
+  border-right: 2px solid #cbd5e1;
+}
+
+/* =========================
+   AST PANEL
+   ========================= */
+
+.ast-section {
+  width: 50%;
+  height: 100%;
+  min-height: 0;
+
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   AST PLACEHOLDER
+   ========================= */
+
+.ast-placeholder {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.ast-root {
+  padding: 14px 28px;
+
+  background: #dbeafe;
+
+  border: 2px solid #3b82f6;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  color: #1e3a8a;
+}
+
+.ast-message {
+  color: #64748b;
+}
+
+/* =========================
+   CONSOLE
+   ========================= */
+
+.console {
+  height: 180px;
+  min-height: 180px;
+  flex-shrink: 0;
+
+  background: #ffffff;
+
+  border-top: 2px solid #cbd5e1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.console-title {
+  height: 42px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 16px;
+
+  background: #e2e8f0;
+
+  font-weight: bold;
+  color: #334155;
+}
+
+.console-output {
+  flex: 1;
+
+  margin: 0;
+  padding: 15px;
+
+  overflow: auto;
+
+  white-space: pre-wrap;
+
+  font-family: Consolas, monospace;
+  font-size: 14px;
+
+  color: #334155;
+
+  background: #ffffff;
+}
