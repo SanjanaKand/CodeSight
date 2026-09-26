@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 html,
 body,
 #root {
@@ -8,5 +10,21 @@ body,
 }
 
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
+}
+
+/* Highlight the line currently being executed */
+.codesight-execution-line {
+  background: rgba(59, 130, 246, 0.18) !important;
+  border-left: 3px solid #60a5fa !important;
+  box-sizing: border-box;
+}
+
+/* Small marker shown in the editor gutter */
+.codesight-execution-glyph {
+  background: #60a5fa !important;
+  width: 4px !important;
+  margin-left: 4px;
+  border-radius: 2px;
 }
